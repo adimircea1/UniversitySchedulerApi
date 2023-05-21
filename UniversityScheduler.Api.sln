@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityScheduler.Api", "UniversityScheduler.Api\UniversityScheduler.Api.csproj", "{542A9BD7-CC1A-4446-BFA2-9FD593CFB7FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityScheduler.Api.Core", "UniversityScheduler.Api.Core\UniversityScheduler.Api.Core.csproj", "{A53E53E1-5E30-4C79-B60C-94EC174036B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UniversityScheduler.Api.Infrastructure", "UniversityScheduler.Api.Infrastructure\UniversityScheduler.Api.Infrastructure.csproj", "{89AA37A4-5E08-499B-8DD1-4063A65A857C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{542A9BD7-CC1A-4446-BFA2-9FD593CFB7FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{542A9BD7-CC1A-4446-BFA2-9FD593CFB7FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{542A9BD7-CC1A-4446-BFA2-9FD593CFB7FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{542A9BD7-CC1A-4446-BFA2-9FD593CFB7FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A53E53E1-5E30-4C79-B60C-94EC174036B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A53E53E1-5E30-4C79-B60C-94EC174036B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A53E53E1-5E30-4C79-B60C-94EC174036B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A53E53E1-5E30-4C79-B60C-94EC174036B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89AA37A4-5E08-499B-8DD1-4063A65A857C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89AA37A4-5E08-499B-8DD1-4063A65A857C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89AA37A4-5E08-499B-8DD1-4063A65A857C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89AA37A4-5E08-499B-8DD1-4063A65A857C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
