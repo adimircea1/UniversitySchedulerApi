@@ -1,6 +1,6 @@
 ﻿using UniversityScheduler.Api.Core.Models.University_Entities;
 
-namespace UniversityScheduler.Api.Core.Services.ServiceInterfaces; 
+namespace UniversityScheduler.Api.Core.Services.ServiceInterfaces;
 
 public interface IGradeService
 {
