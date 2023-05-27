@@ -1,0 +1,14 @@
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Core\bin\Debug\net6.0\UniversityScheduler.Api.Core.deps.json
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Core\bin\Debug\net6.0\UniversityScheduler.Api.Core.runtimeconfig.json
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Core\bin\Debug\net6.0\UniversityScheduler.Api.Core.dll
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Core\bin\Debug\net6.0\UniversityScheduler.Api.Core.pdb
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Core\obj\Debug\net6.0\UniversityScheduler.Api.Core.csproj.AssemblyReference.cache
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Core\obj\Debug\net6.0\UniversityScheduler.Api.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Core\obj\Debug\net6.0\UniversityScheduler.Api.Core.AssemblyInfoInputs.cache
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Core\obj\Debug\net6.0\UniversityScheduler.Api.Core.AssemblyInfo.cs
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Core\obj\Debug\net6.0\UniversityScheduler.Api.Core.csproj.CoreCompileInputs.cache
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Core\obj\Debug\net6.0\UniversityScheduler.Api.Core.dll
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Core\obj\Debug\net6.0\refint\UniversityScheduler.Api.Core.dll
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Core\obj\Debug\net6.0\UniversityScheduler.Api.Core.pdb
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Core\obj\Debug\net6.0\UniversityScheduler.Api.Core.genruntimeconfig.cache
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Core\obj\Debug\net6.0\ref\UniversityScheduler.Api.Core.dll

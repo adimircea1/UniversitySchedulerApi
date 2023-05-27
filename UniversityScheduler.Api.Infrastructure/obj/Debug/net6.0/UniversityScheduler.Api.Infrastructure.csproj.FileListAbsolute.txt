@@ -1,0 +1,17 @@
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Infrastructure\bin\Debug\net6.0\UniversityScheduler.Api.Infrastructure.deps.json
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Infrastructure\bin\Debug\net6.0\UniversityScheduler.Api.Infrastructure.runtimeconfig.json
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Infrastructure\bin\Debug\net6.0\UniversityScheduler.Api.Infrastructure.dll
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Infrastructure\bin\Debug\net6.0\UniversityScheduler.Api.Infrastructure.pdb
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Infrastructure\bin\Debug\net6.0\UniversityScheduler.Api.Core.dll
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Infrastructure\bin\Debug\net6.0\UniversityScheduler.Api.Core.pdb
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Infrastructure\obj\Debug\net6.0\UniversityScheduler.Api.Infrastructure.csproj.AssemblyReference.cache
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Infrastructure\obj\Debug\net6.0\UniversityScheduler.Api.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Infrastructure\obj\Debug\net6.0\UniversityScheduler.Api.Infrastructure.AssemblyInfoInputs.cache
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Infrastructure\obj\Debug\net6.0\UniversityScheduler.Api.Infrastructure.AssemblyInfo.cs
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Infrastructure\obj\Debug\net6.0\UniversityScheduler.Api.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Infrastructure\obj\Debug\net6.0\UniversityScheduler.Api.Infrastructure.csproj.CopyComplete
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Infrastructure\obj\Debug\net6.0\UniversityScheduler.Api.Infrastructure.dll
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Infrastructure\obj\Debug\net6.0\refint\UniversityScheduler.Api.Infrastructure.dll
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Infrastructure\obj\Debug\net6.0\UniversityScheduler.Api.Infrastructure.pdb
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Infrastructure\obj\Debug\net6.0\UniversityScheduler.Api.Infrastructure.genruntimeconfig.cache
+C:\Projects\UniversitySchedulerApi\UniversityScheduler.Api.Infrastructure\obj\Debug\net6.0\ref\UniversityScheduler.Api.Infrastructure.dll
