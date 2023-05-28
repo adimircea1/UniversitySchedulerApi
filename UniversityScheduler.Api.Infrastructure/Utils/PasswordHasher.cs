@@ -1,9 +1,12 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
+using UniversityScheduler.Api.Core.Enums;
+using UniversityScheduler.Api.Core.Models.Attributes;
 using UniversityScheduler.Api.Core.Utils.Interfaces;
 
 namespace UniversityScheduler.Api.Infrastructure.Utils;
 
+[Registration(Type = RegistrationKind.Scoped)]
 public class PasswordHasher : IPasswordHasher
 {
     public string ComputeHash(string password)

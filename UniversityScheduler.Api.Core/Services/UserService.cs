@@ -39,11 +39,16 @@ public class UserService : IUserService
         return (await GetAllUsersAsync()).FirstOrDefault(u => u.Email == email) ??
                throw new Exception($"User having email {email} does not exist!");
     }
-
+    
     public async Task AddUserAsync(User user)
     {
         await QueueAddUserAsync(user);
         await _userRepository.SaveChangesAsync();
+        
+        //now send a confirmation link
+        //my id field is automatic, so whenever i add a new User, the id value will grow => i have to get the is from the db, otherwise it will be 0
+        var id = (await FindUserByEmailAsync(user.Email)).Id;
+        await _confirmationEmailSender.SendEmailAsync(user.Email, id);
     }
 
     public async Task AddUsersAsync(List<User> users)
@@ -85,10 +90,14 @@ public class UserService : IUserService
         return user;
     }
 
-    public async Task VerifyUserEmailAsync(int userId)
+    public async Task SendConfirmationEmailAsync(int userId)
     {
-        await QueueVerifyUserEmailAsync(userId);
-        await _userRepository.SaveChangesAsync();
+        await QueueSendConfirmationEmailAsync(userId);
+    }
+
+    public async Task SendConfirmationEmailAsync(string userEmail)
+    {
+        await QueueSendConfirmationEmailAsync(userEmail);
     }
 
     public async Task UpdateUserByEmailAsync(string userEmail, User updatedUser)
@@ -96,7 +105,7 @@ public class UserService : IUserService
         await QueueUpdateUserByEmailAsync(userEmail, updatedUser);
         await _userRepository.SaveChangesAsync();
     }
-
+    
     public async Task QueueAddUserAsync(User user)
     {
         await _userRepository.AddEntityAsync(new User
@@ -135,13 +144,31 @@ public class UserService : IUserService
         _userRepository.DeleteAllEntities();
     }
 
-    public async Task QueueVerifyUserEmailAsync(int userId)
+    public async Task QueueSendConfirmationEmailAsync(int userId)
     {
         var user = await GetUserByIdAsync(userId);
 
         if (!user.EmailConfirmed)
         {
             await _confirmationEmailSender.SendEmailAsync(user.Email, user.Id);
+        }
+        else
+        {
+            throw new Exception("This email address has been already confirmed!");
+        }
+    }
+
+    public async Task QueueSendConfirmationEmailAsync(string userEmail)
+    {
+        var user = await FindUserByEmailAsync(userEmail);
+
+        if (!user.EmailConfirmed)
+        {
+            await _confirmationEmailSender.SendEmailAsync(user.Email, user.Id);
+        }
+        else
+        {
+            throw new Exception("This email address has been already confirmed!");
         }
     }
 
@@ -150,4 +177,5 @@ public class UserService : IUserService
         var user = await FindUserByEmailAsync(userEmail);
         await _userRepository.UpdateEntityByIdAsync(user.Id, updatedUser);
     }
+    
 }

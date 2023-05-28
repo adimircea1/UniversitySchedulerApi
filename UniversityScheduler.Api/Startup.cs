@@ -4,7 +4,9 @@ using Microsoft.OpenApi.Models;
 using Npgsql;
 using UniversityScheduler.Api.Core.Extensions;
 using UniversityScheduler.Api.Core.RepositoryInterfaces;
+using UniversityScheduler.Api.Core.Utils.Interfaces;
 using UniversityScheduler.Api.Infrastructure.Repositories;
+using UniversityScheduler.Api.Infrastructure.Utils;
 
 namespace UniversityScheduler.Api;
 
@@ -27,6 +29,7 @@ public class Startup
         //services.AddScoped(typeof(IGenericRepository<>), typeof(InMemoryGenericRepository<>));
 
         services.AddScoped(typeof(IDatabaseGenericRepository<>), typeof(DatabaseGenericRepository<>));
+        services.AddScoped<IPasswordHasher, PasswordHasher>();
 
         services.InjectServices("UniversityScheduler.Api.Core");
 

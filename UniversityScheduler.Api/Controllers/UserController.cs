@@ -131,36 +131,32 @@ public class UserController : ControllerBase
         }
     }
 
-    [HttpPost("confirm-email")]
-    public async Task<ActionResult> ConfirmUserEmail(int userId)
-    {
-        try
-        {
-            await _userService.VerifyUserEmailAsync(userId);
-        }
-        catch (ValidationException e)
-        {
-            Console.WriteLine(e.Message);
-            return StatusCode(500);
-        }
-
-        return Ok();
-    }
+    // [HttpPost("send-confirmation-link")]
+    // public async Task<ActionResult> SendConfirmationLinkAsync([FromBody] User user)
+    // {
+    //     try
+    //     {
+    //         
+    //     }
+    //     catch (Exception e)
+    //     {
+    //         
+    //     }
+    // }
     
-    [HttpPut("update-user-by-email")]
-    public async Task<ActionResult> UpdateUserByEmailAsync([FromQuery] string email, [FromBody] User user)
+    [HttpGet("confirm-email")]
+    public async Task<ActionResult> ConfirmEmailAsync([FromQuery] int userId)
     {
         try
         {
-            await _userService.UpdateUserByEmailAsync(email, user);
+            await _userService.UpdateUserByIdAsync(userId, new User { EmailConfirmed = true });
         }
-        catch (ValidationException e)
+        catch(Exception e)
         {
             Console.WriteLine(e.Message);
             return StatusCode(500);
         }
 
-        return Ok($"Successfully updated user with email {email}!");
+        return Ok("Successfully confirmed the email!");
     }
-
 }
