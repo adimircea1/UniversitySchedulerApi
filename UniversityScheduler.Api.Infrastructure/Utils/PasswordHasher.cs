@@ -1,9 +1,10 @@
 ﻿using System.Security.Cryptography;
 using System.Text;
+using UniversityScheduler.Api.Core.Utils.Interfaces;
 
-namespace UniversityScheduler.Api.Core.Models;
+namespace UniversityScheduler.Api.Infrastructure.Utils;
 
-public class PasswordHasher
+public class PasswordHasher : IPasswordHasher
 {
     public string ComputeHash(string password)
     {

@@ -1,4 +1,4 @@
-﻿namespace UniversityScheduler.Api.Core.Models;
+﻿namespace UniversityScheduler.Api.InputData;
 
 public class LoginData
 {

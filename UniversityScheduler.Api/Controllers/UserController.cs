@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using UniversityScheduler.Api.Core.Models;
 using UniversityScheduler.Api.Core.Services.ServiceInterfaces;
+using UniversityScheduler.Api.InputData;
 
 namespace UniversityScheduler.Api.Controllers;
 
@@ -123,9 +124,43 @@ public class UserController : ControllerBase
         {
             return await _userService.UserLoginAsync(data.Email, data.Password);
         }
-        catch (Exception e)
+        catch (ValidationException e)
         {
-            return NotFound(e.Message);
+            Console.WriteLine(e.Message);
+            return StatusCode(500);
         }
     }
+
+    [HttpPost("confirm-email")]
+    public async Task<ActionResult> ConfirmUserEmail(int userId)
+    {
+        try
+        {
+            await _userService.VerifyUserEmailAsync(userId);
+        }
+        catch (ValidationException e)
+        {
+            Console.WriteLine(e.Message);
+            return StatusCode(500);
+        }
+
+        return Ok();
+    }
+    
+    [HttpPut("update-user-by-email")]
+    public async Task<ActionResult> UpdateUserByEmailAsync([FromQuery] string email, [FromBody] User user)
+    {
+        try
+        {
+            await _userService.UpdateUserByEmailAsync(email, user);
+        }
+        catch (ValidationException e)
+        {
+            Console.WriteLine(e.Message);
+            return StatusCode(500);
+        }
+
+        return Ok($"Successfully updated user with email {email}!");
+    }
+
 }

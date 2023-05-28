@@ -259,6 +259,9 @@ namespace UniversityScheduler.Api.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("boolean");
+
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("text");

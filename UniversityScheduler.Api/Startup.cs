@@ -31,12 +31,14 @@ public class Startup
         services.InjectServices("UniversityScheduler.Api.Core");
 
         services.AddDbContext<DataContext>(options => { options.UseNpgsql(new NpgsqlConnection(ConnectionString)); });
-
+        
         services.AddControllers(options => { }).AddJsonOptions(options =>
         {
             options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
         });
 
+        
+        
         services.AddSwaggerGen(c =>
         {
             c.SwaggerDoc("v1", new OpenApiInfo
